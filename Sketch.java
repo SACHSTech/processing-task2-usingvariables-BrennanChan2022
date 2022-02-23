@@ -22,45 +22,48 @@ public class Sketch extends PApplet {
     //Draw Grass + Dirt
     noStroke();
     fill(57, 184, 65);
-    rect(0,400,500,50);
+    rect(0, height/1.25f, width/1f, height/10f);
 
     fill(107, 68, 27);
-    rect(0,450,500,50);
+    rect(0, height/1.11f, width/1f, height/10f);
  
-    // Draw House + Roof
-    stroke(0,0,0);
+    // Set Stroke Settings for House + Roof
+    stroke(0, 0, 0);
     strokeWeight(1);
+    
+    // Draw House + Roof
     fill(148, 61, 61);
-    rect(130,160,240,240);
+    rect(width/3.85f, height/3.125f, width/2.083f, height/2.083f);
 
     fill(130, 127, 127);
-    rect(310,80,40,60);
-    triangle(100, 160, 250, 80, 400, 160);
+    rect(width/1.61f, height/6.25f, width/12.5f, height/8.33f);    
+    triangle(width/5f, height/3.125f, width/2f, height/6.25f, width/1.25f, height/3.125f);
 
     // Draw Door and Windows
     fill(79, 5, 5);
-    rect(220,300,60,100);
+    rect(width/2.27f, height/1.67f, width/8.33f, height/5f);
     fill(110, 0, 0);
-    ellipse(270, 350, 10, 10);
+    ellipse(width/1.85f, height/1.43f, width/50f, height/50f);
 
     fill(203, 212, 211);
-    ellipse(180, 270, 50, 60);
-    ellipse(320, 270, 50, 60);
-    rect(220,180,60,50);
+    ellipse(width/2.78f, height/1.85f, width/10f, height/8.33f);
+    ellipse(width/1.563f, height/1.85f, width/10f, height/8.33f);
+    rect(width/2.27f, height/2.78f, width/8.33f, height/10f);
 
-    stroke(0,0,0);
-    line(250, 180, 250, 230); 
-    line(220, 205, 280, 205); 
+    // Draw Window Panes
+    stroke(0, 0, 0);
+    line(width/2f, height/2.78f, width/2f, height/2.17f); 
+    line(width/2.27f, height/2.44f, width/1.786f, width/2.44f); 
 
     //Draw Sun and Clouds
     noStroke();
     fill(255, 251, 33);
-    ellipse(40, 40, 60, 60);
+    ellipse(width/12.5f, height/12.5f, width/8.33f, height/8.33f);
 
     fill(255, 255, 255);
-    ellipse(150, 40, 110, 45);
-    ellipse(305, 40, 165, 50);
-    ellipse(440, 40, 85, 45);
+    ellipse(width/3.33f, height/12.5f, width/4.545f, height/11.111f);
+    ellipse(width/1.64f, height/12.5f, width/3.03f, height/10f);
+    ellipse(width/1.136f, height/12.5f, width/5.88f, height/11.111f);
   }
   
 }
