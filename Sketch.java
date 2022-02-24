@@ -1,7 +1,7 @@
 import processing.core.PApplet;
 
   /**
-  * A program Sketch.java that draws a house with a background which will adjust with the size of the screen.
+  * A program Sketch.java that draws a house with a background that will adjust with the size of the screen.
   * @author: B. Chan
   */
 
